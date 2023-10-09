@@ -1,2 +1,7 @@
 */packer-compiled.lua
 */*compiled*
+rplugin.vim
+*.json
+mason/
+site/
+.netrwhist
