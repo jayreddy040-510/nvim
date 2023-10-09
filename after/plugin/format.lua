@@ -40,7 +40,7 @@ require("formatter").setup({
 		},
 
 		python = {
-			require("formatter.filetypes.python").pylint,
+			require("formatter.filetypes.python").autopep8,
 		},
 
 		go = {

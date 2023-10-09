@@ -5,14 +5,7 @@ lsp.preset("recommended")
 lsp.ensure_installed({
   'tsserver',
   'gopls',
-  'python-lsp-server',
-  'docker-compose-language-server',
-  'dockerfile-language-server',
-  'marksman',
-  'gofumpt',
-  'prettier',
-  'autopep8',
-  'styleua',
+  'pylsp',
 })
 
 -- Fix Undefined global 'vim'
