@@ -5,3 +5,4 @@ rplugin.vim
 mason/
 site/
 .netrwhist
+telescope_history
