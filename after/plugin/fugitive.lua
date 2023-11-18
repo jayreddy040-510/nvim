@@ -1,4 +1,11 @@
-vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
+-- Key mapping for Git Status
+vim.keymap.set("n", "<leader>gs", ":Git<CR>")
+
+-- Key mapping for Git Add Current File
+vim.keymap.set("n", "<leader>ga", ":Git add %<CR>")
+
+-- Key mapping for Git Commit Current File
+vim.keymap.set("n", "<leader>gc", ":Git commit %<CR>")
 
 local ThePrimeagen_Fugitive = vim.api.nvim_create_augroup("ThePrimeagen_Fugitive", {})
 
@@ -7,7 +14,7 @@ autocmd("BufWinEnter", {
 	group = ThePrimeagen_Fugitive,
 	pattern = "*",
 	callback = function()
-		if vim.bo.ft ~= "fugitive" then
+		if vim.bo.filetype ~= "fugitive" then
 			return
 		end
 
@@ -22,8 +29,8 @@ autocmd("BufWinEnter", {
 			vim.cmd.Git({ "pull", "--rebase" })
 		end, opts)
 
-		-- NOTE: It allows me to easily set the branch i am pushing and any tracking
-		-- needed if i did not set the branch up correctly
+		-- NOTE: It allows me to easily set the branch I am pushing and any tracking
+		-- needed if I did not set the branch up correctly
 		vim.keymap.set("n", "<leader>t", ":Git push -u origin ", opts)
 	end,
 })
