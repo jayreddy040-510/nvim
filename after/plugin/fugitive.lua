@@ -1,11 +1,13 @@
--- Key mapping for Git Status
-vim.keymap.set("n", "<leader>gs", ":Git<CR>")
+-- Key mappings for various Git operations
+vim.keymap.set("n", "<leader>gs", ":Git<CR>", { silent = true })
+vim.keymap.set("n", "<leader>ga", ":Git add %<CR>", { silent = true })
+vim.keymap.set("n", "<leader>gc", ":Git commit %<CR>", { silent = true })
 
--- Key mapping for Git Add Current File
-vim.keymap.set("n", "<leader>ga", ":Git add %<CR>")
+-- Changed to 'git push origin main'
+vim.keymap.set("n", "<leader>gp", ":Git push origin main<CR>", { silent = true })
 
--- Key mapping for Git Commit Current File
-vim.keymap.set("n", "<leader>gc", ":Git commit %<CR>")
+-- Added 'git pull origin main'
+vim.keymap.set("n", "<leader>gl", ":Git pull origin main<CR>", { silent = true })
 
 local ThePrimeagen_Fugitive = vim.api.nvim_create_augroup("ThePrimeagen_Fugitive", {})
 
