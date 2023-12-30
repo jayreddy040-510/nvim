@@ -6,6 +6,7 @@ lsp.ensure_installed({
 	"gopls",
 	"pylsp",
 	"lua_ls",
+	"jdtls",
 })
 
 -- Fix Undefined global 'vim'
