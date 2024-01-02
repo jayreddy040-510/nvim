@@ -49,9 +49,6 @@ require("formatter").setup({
 
 		bash = {
 			require("formatter.filetypes.sh").shfmt,
-        },
-		java = {
-			require("formatter.filetypes.java").java,
 		},
 		java = {
 			require("formatter.filetypes.java").java,
