@@ -53,6 +53,9 @@ require("formatter").setup({
 		java = {
 			require("formatter.filetypes.java").java,
 		},
+		java = {
+			require("formatter.filetypes.java").java,
+		},
 
 		-- Use the special "*" filetype for defining formatter configurations on
 		-- any filetype
