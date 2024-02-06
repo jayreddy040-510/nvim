@@ -38,9 +38,12 @@ vim.keymap.set("n", "<leader><leader>", function()
 	vim.cmd("so")
 end)
 
-vim.cmd([[
-augroup FormatAutogroup
-  autocmd!
-  autocmd BufWritePost * FormatWrite
-augroup END
-]])
+vim.keymap.set("n", "<leader>tn", ":tabnew<CR>")
+vim.keymap.set("n", "<leader>tx", ":clo<CR>")
+
+-- vim.cmd([[
+-- augroup FormatAutogroup
+--   autocmd!
+--   autocmd BufWritePost * FormatWrite
+-- augroup END
+-- ]])
