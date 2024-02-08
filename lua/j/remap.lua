@@ -40,6 +40,9 @@ end)
 
 vim.keymap.set("n", "<leader>tn", ":tabnew<CR>")
 vim.keymap.set("n", "<leader>tx", ":clo<CR>")
+vim.keymap.set("n", "<leader>h", ":noh<CR>")
+vim.keymap.set("n", "<leader>w", "<C-w>")
+vim.keymap.set("n", "<leader>v", ":vsp<CR>")
 
 -- vim.cmd([[
 -- augroup FormatAutogroup

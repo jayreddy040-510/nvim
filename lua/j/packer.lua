@@ -38,14 +38,14 @@ return require("packer").startup(function(use)
         branch = "v2.x",
         requires = {
             -- LSP Support
-            { "neovim/nvim-lspconfig" },    -- Required
-            { "williamboman/mason.nvim" },  -- Optional
+            { "neovim/nvim-lspconfig" },             -- Required
+            { "williamboman/mason.nvim" },           -- Optional
             { "williamboman/mason-lspconfig.nvim" }, -- Optional
 
             -- Autocompletion
-            { "hrsh7th/nvim-cmp" }, -- Required
+            { "hrsh7th/nvim-cmp" },     -- Required
             { "hrsh7th/cmp-nvim-lsp" }, -- Required
-            { "L3MON4D3/LuaSnip" }, -- Required
+            { "L3MON4D3/LuaSnip" },     -- Required
         },
     })
 
@@ -69,4 +69,10 @@ return require("packer").startup(function(use)
 
     -- Indent blanklines
     use "lukas-reineke/indent-blankline.nvim"
+
+    -- Bottom status bar (lualine)
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
 end)
