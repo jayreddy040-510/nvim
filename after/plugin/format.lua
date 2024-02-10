@@ -53,6 +53,9 @@ require("formatter").setup({
 		java = {
 			require("formatter.filetypes.java").java,
 		},
+        typescript = {
+            require("formatter.filetypes.typescript").prettier,
+        },
 
 		-- Use the special "*" filetype for defining formatter configurations on
 		-- any filetype
