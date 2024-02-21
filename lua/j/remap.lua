@@ -45,9 +45,9 @@ vim.keymap.set("n", "<leader>w", "<C-w>")
 vim.keymap.set("n", "<leader>wv", ":vsp<CR><C-w>l", {silent = true})
 vim.keymap.set("n", "<leader>wx", ":clo<CR>")
 
--- vim.cmd([[
--- augroup FormatAutogroup
---   autocmd!
---   autocmd BufWritePost * FormatWrite
--- augroup END
--- ]])
+vim.cmd([[
+augroup FormatAutogroup
+  autocmd!
+  autocmd BufWritePost * FormatWrite
+augroup END
+]])
