@@ -42,7 +42,7 @@ vim.keymap.set("n", "<leader>tn", ":tabnew<CR>")
 vim.keymap.set("n", "<leader>tx", ":clo<CR>")
 vim.keymap.set("n", "<leader>hh", ":noh<CR>")
 vim.keymap.set("n", "<leader>w", "<C-w>")
-vim.keymap.set("n", "<leader>wv", ":vsp<CR><C-w>l", {silent = true})
+vim.keymap.set("n", "<leader>ww", ":vsp<CR><C-w>l", {silent = true})
 vim.keymap.set("n", "<leader>wx", ":clo<CR>")
 
 vim.cmd([[
