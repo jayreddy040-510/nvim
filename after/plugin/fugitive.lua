@@ -2,6 +2,7 @@
 vim.keymap.set("n", "<leader>gs", ":Git<CR>", { silent = true })
 vim.keymap.set("n", "<leader>ga", ":Git add %<CR>", { silent = true })
 vim.keymap.set("n", "<leader>gc", ":Git commit %<CR>", { silent = true })
+vim.keymap.set("n", "<leader>gb", ":Git blame <CR>", { silent = true })
 
 -- Changed to 'git push origin main'
 vim.keymap.set("n", "<leader>gp", ":Git push origin main<CR>", { silent = true })
