@@ -33,6 +33,7 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+vim.keymap.set("n", "<leader>q", ":q<CR>")
 
 vim.keymap.set("n", "<leader><leader>", function()
 	vim.cmd("so")
@@ -42,7 +43,7 @@ vim.keymap.set("n", "<leader>tn", ":tabnew<CR>")
 vim.keymap.set("n", "<leader>tx", ":clo<CR>")
 vim.keymap.set("n", "<leader>hh", ":noh<CR>")
 vim.keymap.set("n", "<leader>w", "<C-w>")
-vim.keymap.set("n", "<leader>ww", ":vsp<CR><C-w>l", {silent = true})
+vim.keymap.set("n", "<leader>wv", ":vsp<CR><C-w>l", { silent = true })
 vim.keymap.set("n", "<leader>wx", ":clo<CR>")
 
 vim.cmd([[
